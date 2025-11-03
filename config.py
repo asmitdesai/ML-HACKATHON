@@ -1,6 +1,6 @@
 # --- Constants ---
 ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
-MAX_LIVES = 6  # As specified in the evaluation
+MAX_LIVES = 6  # As specified in the evaluation [cite: 41]
 
 # --- File Paths ---
 CORPUS_PATH = 'corpus.txt'
@@ -21,11 +21,11 @@ GAMMA = 0.99              # Discount factor for future rewards
 # --- Replay Buffer ---
 BUFFER_SIZE = 100000      # Max size of the replay memory
 
-# --- Exploration (Epsilon-Greedy) ---
+# --- Exploration (Epsilon-Greedy) [cite: 55] ---
 EPSILON_START = 1.0       # Start with 100% exploration
 EPSILON_END = 0.01        # End with 1% exploration
 EPSILON_DECAY = 0.995     # Multiplicative decay rate
 
 # --- Training & Evaluation ---
-NUM_EPISODES_TRAIN = 10000   # Number of games to train the agent on
-NUM_EPISODES_EVAL = 2000     # Number of games for final evaluation
+NUM_EPISODES_TRAIN = 100000   # Number of games to train the agent on
+NUM_EPISODES_EVAL = 2000     # Number of games for final evaluation [cite: 41]
